@@ -16,7 +16,6 @@ GET {{baseUrl}}/rooms
 # Create room
 # @name createRoom
 POST {{baseUrl}}/rooms
-Accept: application/json
 Content-Type: application/json
 
 {
@@ -33,3 +32,14 @@ Content-Type: application/json
 # Get room questions
 # @name getRoomQuestions
 GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+### 
+
+# Create question
+# @name createQuestion
+POST {{baseUrl}}/rooms/{{roomId}}/questions
+Content-Type: application/json
+
+{
+  "question": "Is this a question example ?"
+}
