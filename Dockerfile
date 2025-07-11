@@ -8,6 +8,7 @@ RUN npm install
 COPY . .
 
 # Drizzle setup
+RUN npm run db:generate
 RUN npm run db:migrate
 RUN npm run db:seed
 
