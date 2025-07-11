@@ -11,5 +11,6 @@
     "source.fixAll.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
-  "cSpell.words": ["gemini", "postgres"]
+  "cSpell.words": ["gemini", "postgres"],
+  "terminal.integrated.suggest.selectionMode": "always"
 }
