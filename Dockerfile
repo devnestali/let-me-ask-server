@@ -7,8 +7,8 @@ RUN npm install
 
 COPY . .
 
-RUN npm run db:migrate && npm run bd:seed
+
 
 EXPOSE 3333
 
-CMD ["npm", "start"]
+CMD ["sh", "-c", "npm run db:migrate && npm run db:seed && npm start"]
