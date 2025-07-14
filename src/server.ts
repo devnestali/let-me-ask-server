@@ -16,7 +16,7 @@ import { uploadAudioRoute } from './http/routes/upload-audio.ts'
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
 app.register(fastifyCors, {
-  origin: 'https://let-me-38lz3i4rh-devnestalis-projects.vercel.app',
+  origin: 'http://localhost:5173',
 })
 
 app.register(fastifyMultipart)
