@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --env-file .env --experimental-strip-types --no-warnings src/server.ts",
+    "start": "ts-node src/server.ts",
     "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -19,6 +19,7 @@
     "@types/node": "^24.0.10",
     "drizzle-kit": "^0.31.4",
     "drizzle-seed": "^0.3.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "ultracite": "5.0.32"
   },
